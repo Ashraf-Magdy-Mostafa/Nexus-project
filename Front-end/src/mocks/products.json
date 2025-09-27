@@ -1,0 +1,962 @@
+[
+  {
+    "id": 1,
+    "title": "Audio Product 1",
+    "category": "Audio",
+    "price": 1422.58,
+    "rating": 3.5,
+    "thumbnail": "https://picsum.photos/seed/1/400/300"
+  },
+  {
+    "id": 2,
+    "title": "Phones Product 2",
+    "category": "Phones",
+    "price": 122.57,
+    "rating": 3.8,
+    "thumbnail": "https://picsum.photos/seed/2/400/300"
+  },
+  {
+    "id": 3,
+    "title": "Audio Product 3",
+    "category": "Audio",
+    "price": 880.44,
+    "rating": 4.8,
+    "thumbnail": "https://picsum.photos/seed/3/400/300"
+  },
+  {
+    "id": 4,
+    "title": "Laptops Product 4",
+    "category": "Laptops",
+    "price": 70.68,
+    "rating": 3.6,
+    "thumbnail": "https://picsum.photos/seed/4/400/300"
+  },
+  {
+    "id": 5,
+    "title": "Phones Product 5",
+    "category": "Phones",
+    "price": 372.38,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/5/400/300"
+  },
+  {
+    "id": 6,
+    "title": "Phones Product 6",
+    "category": "Phones",
+    "price": 1242.88,
+    "rating": 2.8,
+    "thumbnail": "https://picsum.photos/seed/6/400/300"
+  },
+  {
+    "id": 7,
+    "title": "Laptops Product 7",
+    "category": "Laptops",
+    "price": 951.48,
+    "rating": 4.0,
+    "thumbnail": "https://picsum.photos/seed/7/400/300"
+  },
+  {
+    "id": 8,
+    "title": "Phones Product 8",
+    "category": "Phones",
+    "price": 872.0,
+    "rating": 3.5,
+    "thumbnail": "https://picsum.photos/seed/8/400/300"
+  },
+  {
+    "id": 9,
+    "title": "Laptops Product 9",
+    "category": "Laptops",
+    "price": 84.18,
+    "rating": 4.6,
+    "thumbnail": "https://picsum.photos/seed/9/400/300"
+  },
+  {
+    "id": 10,
+    "title": "Audio Product 10",
+    "category": "Audio",
+    "price": 637.42,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/10/400/300"
+  },
+  {
+    "id": 11,
+    "title": "Gaming Product 11",
+    "category": "Gaming",
+    "price": 473.1,
+    "rating": 4.5,
+    "thumbnail": "https://picsum.photos/seed/11/400/300"
+  },
+  {
+    "id": 12,
+    "title": "Laptops Product 12",
+    "category": "Laptops",
+    "price": 168.04,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/12/400/300"
+  },
+  {
+    "id": 13,
+    "title": "Laptops Product 13",
+    "category": "Laptops",
+    "price": 568.01,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/13/400/300"
+  },
+  {
+    "id": 14,
+    "title": "Phones Product 14",
+    "category": "Phones",
+    "price": 853.09,
+    "rating": 4.0,
+    "thumbnail": "https://picsum.photos/seed/14/400/300"
+  },
+  {
+    "id": 15,
+    "title": "Wearables Product 15",
+    "category": "Wearables",
+    "price": 1025.39,
+    "rating": 3.6,
+    "thumbnail": "https://picsum.photos/seed/15/400/300"
+  },
+  {
+    "id": 16,
+    "title": "Audio Product 16",
+    "category": "Audio",
+    "price": 706.42,
+    "rating": 4.8,
+    "thumbnail": "https://picsum.photos/seed/16/400/300"
+  },
+  {
+    "id": 17,
+    "title": "Audio Product 17",
+    "category": "Audio",
+    "price": 460.15,
+    "rating": 4.5,
+    "thumbnail": "https://picsum.photos/seed/17/400/300"
+  },
+  {
+    "id": 18,
+    "title": "Home Product 18",
+    "category": "Home",
+    "price": 1173.05,
+    "rating": 2.7,
+    "thumbnail": "https://picsum.photos/seed/18/400/300"
+  },
+  {
+    "id": 19,
+    "title": "Audio Product 19",
+    "category": "Audio",
+    "price": 794.92,
+    "rating": 4.7,
+    "thumbnail": "https://picsum.photos/seed/19/400/300"
+  },
+  {
+    "id": 20,
+    "title": "Home Product 20",
+    "category": "Home",
+    "price": 681.52,
+    "rating": 4.0,
+    "thumbnail": "https://picsum.photos/seed/20/400/300"
+  },
+  {
+    "id": 21,
+    "title": "Phones Product 21",
+    "category": "Phones",
+    "price": 190.33,
+    "rating": 3.5,
+    "thumbnail": "https://picsum.photos/seed/21/400/300"
+  },
+  {
+    "id": 22,
+    "title": "Cameras Product 22",
+    "category": "Cameras",
+    "price": 522.95,
+    "rating": 4.8,
+    "thumbnail": "https://picsum.photos/seed/22/400/300"
+  },
+  {
+    "id": 23,
+    "title": "Wearables Product 23",
+    "category": "Wearables",
+    "price": 73.22,
+    "rating": 4.2,
+    "thumbnail": "https://picsum.photos/seed/23/400/300"
+  },
+  {
+    "id": 24,
+    "title": "Cameras Product 24",
+    "category": "Cameras",
+    "price": 843.74,
+    "rating": 4.5,
+    "thumbnail": "https://picsum.photos/seed/24/400/300"
+  },
+  {
+    "id": 25,
+    "title": "Cameras Product 25",
+    "category": "Cameras",
+    "price": 480.92,
+    "rating": 4.2,
+    "thumbnail": "https://picsum.photos/seed/25/400/300"
+  },
+  {
+    "id": 26,
+    "title": "Gaming Product 26",
+    "category": "Gaming",
+    "price": 752.56,
+    "rating": 4.5,
+    "thumbnail": "https://picsum.photos/seed/26/400/300"
+  },
+  {
+    "id": 27,
+    "title": "Phones Product 27",
+    "category": "Phones",
+    "price": 1262.35,
+    "rating": 4.9,
+    "thumbnail": "https://picsum.photos/seed/27/400/300"
+  },
+  {
+    "id": 28,
+    "title": "Wearables Product 28",
+    "category": "Wearables",
+    "price": 1050.11,
+    "rating": 2.7,
+    "thumbnail": "https://picsum.photos/seed/28/400/300"
+  },
+  {
+    "id": 29,
+    "title": "Home Product 29",
+    "category": "Home",
+    "price": 1056.72,
+    "rating": 4.1,
+    "thumbnail": "https://picsum.photos/seed/29/400/300"
+  },
+  {
+    "id": 30,
+    "title": "Home Product 30",
+    "category": "Home",
+    "price": 1235.56,
+    "rating": 3.2,
+    "thumbnail": "https://picsum.photos/seed/30/400/300"
+  },
+  {
+    "id": 31,
+    "title": "Wearables Product 31",
+    "category": "Wearables",
+    "price": 1332.25,
+    "rating": 3.4,
+    "thumbnail": "https://picsum.photos/seed/31/400/300"
+  },
+  {
+    "id": 32,
+    "title": "Wearables Product 32",
+    "category": "Wearables",
+    "price": 542.86,
+    "rating": 4.0,
+    "thumbnail": "https://picsum.photos/seed/32/400/300"
+  },
+  {
+    "id": 33,
+    "title": "Wearables Product 33",
+    "category": "Wearables",
+    "price": 102.55,
+    "rating": 4.4,
+    "thumbnail": "https://picsum.photos/seed/33/400/300"
+  },
+  {
+    "id": 34,
+    "title": "Laptops Product 34",
+    "category": "Laptops",
+    "price": 1111.47,
+    "rating": 3.5,
+    "thumbnail": "https://picsum.photos/seed/34/400/300"
+  },
+  {
+    "id": 35,
+    "title": "Cameras Product 35",
+    "category": "Cameras",
+    "price": 752.31,
+    "rating": 2.9,
+    "thumbnail": "https://picsum.photos/seed/35/400/300"
+  },
+  {
+    "id": 36,
+    "title": "Wearables Product 36",
+    "category": "Wearables",
+    "price": 830.92,
+    "rating": 4.7,
+    "thumbnail": "https://picsum.photos/seed/36/400/300"
+  },
+  {
+    "id": 37,
+    "title": "Cameras Product 37",
+    "category": "Cameras",
+    "price": 654.32,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/37/400/300"
+  },
+  {
+    "id": 38,
+    "title": "Home Product 38",
+    "category": "Home",
+    "price": 631.72,
+    "rating": 3.4,
+    "thumbnail": "https://picsum.photos/seed/38/400/300"
+  },
+  {
+    "id": 39,
+    "title": "Wearables Product 39",
+    "category": "Wearables",
+    "price": 1437.23,
+    "rating": 2.9,
+    "thumbnail": "https://picsum.photos/seed/39/400/300"
+  },
+  {
+    "id": 40,
+    "title": "Laptops Product 40",
+    "category": "Laptops",
+    "price": 239.68,
+    "rating": 4.1,
+    "thumbnail": "https://picsum.photos/seed/40/400/300"
+  },
+  {
+    "id": 41,
+    "title": "Phones Product 41",
+    "category": "Phones",
+    "price": 735.17,
+    "rating": 4.0,
+    "thumbnail": "https://picsum.photos/seed/41/400/300"
+  },
+  {
+    "id": 42,
+    "title": "Audio Product 42",
+    "category": "Audio",
+    "price": 433.67,
+    "rating": 2.9,
+    "thumbnail": "https://picsum.photos/seed/42/400/300"
+  },
+  {
+    "id": 43,
+    "title": "Gaming Product 43",
+    "category": "Gaming",
+    "price": 563.34,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/43/400/300"
+  },
+  {
+    "id": 44,
+    "title": "Laptops Product 44",
+    "category": "Laptops",
+    "price": 1040.38,
+    "rating": 3.8,
+    "thumbnail": "https://picsum.photos/seed/44/400/300"
+  },
+  {
+    "id": 45,
+    "title": "Gaming Product 45",
+    "category": "Gaming",
+    "price": 987.63,
+    "rating": 4.3,
+    "thumbnail": "https://picsum.photos/seed/45/400/300"
+  },
+  {
+    "id": 46,
+    "title": "Wearables Product 46",
+    "category": "Wearables",
+    "price": 1350.81,
+    "rating": 4.4,
+    "thumbnail": "https://picsum.photos/seed/46/400/300"
+  },
+  {
+    "id": 47,
+    "title": "Cameras Product 47",
+    "category": "Cameras",
+    "price": 1025.65,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/47/400/300"
+  },
+  {
+    "id": 48,
+    "title": "Wearables Product 48",
+    "category": "Wearables",
+    "price": 607.48,
+    "rating": 2.8,
+    "thumbnail": "https://picsum.photos/seed/48/400/300"
+  },
+  {
+    "id": 49,
+    "title": "Home Product 49",
+    "category": "Home",
+    "price": 609.66,
+    "rating": 3.0,
+    "thumbnail": "https://picsum.photos/seed/49/400/300"
+  },
+  {
+    "id": 50,
+    "title": "Laptops Product 50",
+    "category": "Laptops",
+    "price": 669.33,
+    "rating": 2.8,
+    "thumbnail": "https://picsum.photos/seed/50/400/300"
+  },
+  {
+    "id": 51,
+    "title": "Gaming Product 51",
+    "category": "Gaming",
+    "price": 93.07,
+    "rating": 2.5,
+    "thumbnail": "https://picsum.photos/seed/51/400/300"
+  },
+  {
+    "id": 52,
+    "title": "Laptops Product 52",
+    "category": "Laptops",
+    "price": 811.88,
+    "rating": 4.9,
+    "thumbnail": "https://picsum.photos/seed/52/400/300"
+  },
+  {
+    "id": 53,
+    "title": "Gaming Product 53",
+    "category": "Gaming",
+    "price": 52.87,
+    "rating": 4.7,
+    "thumbnail": "https://picsum.photos/seed/53/400/300"
+  },
+  {
+    "id": 54,
+    "title": "Gaming Product 54",
+    "category": "Gaming",
+    "price": 573.7,
+    "rating": 4.1,
+    "thumbnail": "https://picsum.photos/seed/54/400/300"
+  },
+  {
+    "id": 55,
+    "title": "Audio Product 55",
+    "category": "Audio",
+    "price": 909.38,
+    "rating": 3.7,
+    "thumbnail": "https://picsum.photos/seed/55/400/300"
+  },
+  {
+    "id": 56,
+    "title": "Phones Product 56",
+    "category": "Phones",
+    "price": 1275.67,
+    "rating": 5.0,
+    "thumbnail": "https://picsum.photos/seed/56/400/300"
+  },
+  {
+    "id": 57,
+    "title": "Wearables Product 57",
+    "category": "Wearables",
+    "price": 728.39,
+    "rating": 3.3,
+    "thumbnail": "https://picsum.photos/seed/57/400/300"
+  },
+  {
+    "id": 58,
+    "title": "Laptops Product 58",
+    "category": "Laptops",
+    "price": 166.75,
+    "rating": 3.4,
+    "thumbnail": "https://picsum.photos/seed/58/400/300"
+  },
+  {
+    "id": 59,
+    "title": "Audio Product 59",
+    "category": "Audio",
+    "price": 725.75,
+    "rating": 4.2,
+    "thumbnail": "https://picsum.photos/seed/59/400/300"
+  },
+  {
+    "id": 60,
+    "title": "Gaming Product 60",
+    "category": "Gaming",
+    "price": 49.3,
+    "rating": 4.9,
+    "thumbnail": "https://picsum.photos/seed/60/400/300"
+  },
+  {
+    "id": 61,
+    "title": "Gaming Product 61",
+    "category": "Gaming",
+    "price": 552.2,
+    "rating": 4.2,
+    "thumbnail": "https://picsum.photos/seed/61/400/300"
+  },
+  {
+    "id": 62,
+    "title": "Phones Product 62",
+    "category": "Phones",
+    "price": 1140.84,
+    "rating": 3.2,
+    "thumbnail": "https://picsum.photos/seed/62/400/300"
+  },
+  {
+    "id": 63,
+    "title": "Home Product 63",
+    "category": "Home",
+    "price": 1297.04,
+    "rating": 4.2,
+    "thumbnail": "https://picsum.photos/seed/63/400/300"
+  },
+  {
+    "id": 64,
+    "title": "Audio Product 64",
+    "category": "Audio",
+    "price": 784.82,
+    "rating": 4.8,
+    "thumbnail": "https://picsum.photos/seed/64/400/300"
+  },
+  {
+    "id": 65,
+    "title": "Audio Product 65",
+    "category": "Audio",
+    "price": 1161.33,
+    "rating": 3.8,
+    "thumbnail": "https://picsum.photos/seed/65/400/300"
+  },
+  {
+    "id": 66,
+    "title": "Cameras Product 66",
+    "category": "Cameras",
+    "price": 761.51,
+    "rating": 4.1,
+    "thumbnail": "https://picsum.photos/seed/66/400/300"
+  },
+  {
+    "id": 67,
+    "title": "Gaming Product 67",
+    "category": "Gaming",
+    "price": 1220.09,
+    "rating": 5.0,
+    "thumbnail": "https://picsum.photos/seed/67/400/300"
+  },
+  {
+    "id": 68,
+    "title": "Cameras Product 68",
+    "category": "Cameras",
+    "price": 304.79,
+    "rating": 3.1,
+    "thumbnail": "https://picsum.photos/seed/68/400/300"
+  },
+  {
+    "id": 69,
+    "title": "Wearables Product 69",
+    "category": "Wearables",
+    "price": 1113.71,
+    "rating": 3.1,
+    "thumbnail": "https://picsum.photos/seed/69/400/300"
+  },
+  {
+    "id": 70,
+    "title": "Gaming Product 70",
+    "category": "Gaming",
+    "price": 746.78,
+    "rating": 4.3,
+    "thumbnail": "https://picsum.photos/seed/70/400/300"
+  },
+  {
+    "id": 71,
+    "title": "Phones Product 71",
+    "category": "Phones",
+    "price": 1188.32,
+    "rating": 3.7,
+    "thumbnail": "https://picsum.photos/seed/71/400/300"
+  },
+  {
+    "id": 72,
+    "title": "Laptops Product 72",
+    "category": "Laptops",
+    "price": 1043.4,
+    "rating": 4.9,
+    "thumbnail": "https://picsum.photos/seed/72/400/300"
+  },
+  {
+    "id": 73,
+    "title": "Wearables Product 73",
+    "category": "Wearables",
+    "price": 1215.72,
+    "rating": 4.3,
+    "thumbnail": "https://picsum.photos/seed/73/400/300"
+  },
+  {
+    "id": 74,
+    "title": "Audio Product 74",
+    "category": "Audio",
+    "price": 1433.18,
+    "rating": 3.4,
+    "thumbnail": "https://picsum.photos/seed/74/400/300"
+  },
+  {
+    "id": 75,
+    "title": "Laptops Product 75",
+    "category": "Laptops",
+    "price": 166.7,
+    "rating": 3.7,
+    "thumbnail": "https://picsum.photos/seed/75/400/300"
+  },
+  {
+    "id": 76,
+    "title": "Audio Product 76",
+    "category": "Audio",
+    "price": 318.49,
+    "rating": 4.1,
+    "thumbnail": "https://picsum.photos/seed/76/400/300"
+  },
+  {
+    "id": 77,
+    "title": "Gaming Product 77",
+    "category": "Gaming",
+    "price": 1263.05,
+    "rating": 3.7,
+    "thumbnail": "https://picsum.photos/seed/77/400/300"
+  },
+  {
+    "id": 78,
+    "title": "Home Product 78",
+    "category": "Home",
+    "price": 525.85,
+    "rating": 4.1,
+    "thumbnail": "https://picsum.photos/seed/78/400/300"
+  },
+  {
+    "id": 79,
+    "title": "Cameras Product 79",
+    "category": "Cameras",
+    "price": 995.97,
+    "rating": 4.8,
+    "thumbnail": "https://picsum.photos/seed/79/400/300"
+  },
+  {
+    "id": 80,
+    "title": "Cameras Product 80",
+    "category": "Cameras",
+    "price": 1071.57,
+    "rating": 3.0,
+    "thumbnail": "https://picsum.photos/seed/80/400/300"
+  },
+  {
+    "id": 81,
+    "title": "Laptops Product 81",
+    "category": "Laptops",
+    "price": 659.38,
+    "rating": 4.1,
+    "thumbnail": "https://picsum.photos/seed/81/400/300"
+  },
+  {
+    "id": 82,
+    "title": "Phones Product 82",
+    "category": "Phones",
+    "price": 1204.22,
+    "rating": 4.9,
+    "thumbnail": "https://picsum.photos/seed/82/400/300"
+  },
+  {
+    "id": 83,
+    "title": "Wearables Product 83",
+    "category": "Wearables",
+    "price": 702.79,
+    "rating": 4.4,
+    "thumbnail": "https://picsum.photos/seed/83/400/300"
+  },
+  {
+    "id": 84,
+    "title": "Phones Product 84",
+    "category": "Phones",
+    "price": 1091.33,
+    "rating": 2.9,
+    "thumbnail": "https://picsum.photos/seed/84/400/300"
+  },
+  {
+    "id": 85,
+    "title": "Laptops Product 85",
+    "category": "Laptops",
+    "price": 55.91,
+    "rating": 4.0,
+    "thumbnail": "https://picsum.photos/seed/85/400/300"
+  },
+  {
+    "id": 86,
+    "title": "Wearables Product 86",
+    "category": "Wearables",
+    "price": 1212.66,
+    "rating": 2.9,
+    "thumbnail": "https://picsum.photos/seed/86/400/300"
+  },
+  {
+    "id": 87,
+    "title": "Cameras Product 87",
+    "category": "Cameras",
+    "price": 899.87,
+    "rating": 3.7,
+    "thumbnail": "https://picsum.photos/seed/87/400/300"
+  },
+  {
+    "id": 88,
+    "title": "Audio Product 88",
+    "category": "Audio",
+    "price": 246.53,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/88/400/300"
+  },
+  {
+    "id": 89,
+    "title": "Phones Product 89",
+    "category": "Phones",
+    "price": 36.15,
+    "rating": 4.9,
+    "thumbnail": "https://picsum.photos/seed/89/400/300"
+  },
+  {
+    "id": 90,
+    "title": "Home Product 90",
+    "category": "Home",
+    "price": 167.62,
+    "rating": 4.4,
+    "thumbnail": "https://picsum.photos/seed/90/400/300"
+  },
+  {
+    "id": 91,
+    "title": "Laptops Product 91",
+    "category": "Laptops",
+    "price": 659.21,
+    "rating": 4.7,
+    "thumbnail": "https://picsum.photos/seed/91/400/300"
+  },
+  {
+    "id": 92,
+    "title": "Cameras Product 92",
+    "category": "Cameras",
+    "price": 1312.75,
+    "rating": 2.6,
+    "thumbnail": "https://picsum.photos/seed/92/400/300"
+  },
+  {
+    "id": 93,
+    "title": "Laptops Product 93",
+    "category": "Laptops",
+    "price": 450.06,
+    "rating": 3.1,
+    "thumbnail": "https://picsum.photos/seed/93/400/300"
+  },
+  {
+    "id": 94,
+    "title": "Gaming Product 94",
+    "category": "Gaming",
+    "price": 499.09,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/94/400/300"
+  },
+  {
+    "id": 95,
+    "title": "Cameras Product 95",
+    "category": "Cameras",
+    "price": 209.64,
+    "rating": 4.8,
+    "thumbnail": "https://picsum.photos/seed/95/400/300"
+  },
+  {
+    "id": 96,
+    "title": "Audio Product 96",
+    "category": "Audio",
+    "price": 1348.09,
+    "rating": 4.2,
+    "thumbnail": "https://picsum.photos/seed/96/400/300"
+  },
+  {
+    "id": 97,
+    "title": "Cameras Product 97",
+    "category": "Cameras",
+    "price": 1357.88,
+    "rating": 3.6,
+    "thumbnail": "https://picsum.photos/seed/97/400/300"
+  },
+  {
+    "id": 98,
+    "title": "Gaming Product 98",
+    "category": "Gaming",
+    "price": 209.18,
+    "rating": 2.9,
+    "thumbnail": "https://picsum.photos/seed/98/400/300"
+  },
+  {
+    "id": 99,
+    "title": "Gaming Product 99",
+    "category": "Gaming",
+    "price": 42.78,
+    "rating": 3.6,
+    "thumbnail": "https://picsum.photos/seed/99/400/300"
+  },
+  {
+    "id": 100,
+    "title": "Laptops Product 100",
+    "category": "Laptops",
+    "price": 918.7,
+    "rating": 4.4,
+    "thumbnail": "https://picsum.photos/seed/100/400/300"
+  },
+  {
+    "id": 101,
+    "title": "Laptops Product 101",
+    "category": "Laptops",
+    "price": 270.93,
+    "rating": 3.7,
+    "thumbnail": "https://picsum.photos/seed/101/400/300"
+  },
+  {
+    "id": 102,
+    "title": "Home Product 102",
+    "category": "Home",
+    "price": 193.7,
+    "rating": 2.7,
+    "thumbnail": "https://picsum.photos/seed/102/400/300"
+  },
+  {
+    "id": 103,
+    "title": "Home Product 103",
+    "category": "Home",
+    "price": 784.75,
+    "rating": 3.9,
+    "thumbnail": "https://picsum.photos/seed/103/400/300"
+  },
+  {
+    "id": 104,
+    "title": "Cameras Product 104",
+    "category": "Cameras",
+    "price": 1168.09,
+    "rating": 4.7,
+    "thumbnail": "https://picsum.photos/seed/104/400/300"
+  },
+  {
+    "id": 105,
+    "title": "Phones Product 105",
+    "category": "Phones",
+    "price": 384.01,
+    "rating": 3.2,
+    "thumbnail": "https://picsum.photos/seed/105/400/300"
+  },
+  {
+    "id": 106,
+    "title": "Cameras Product 106",
+    "category": "Cameras",
+    "price": 160.15,
+    "rating": 3.6,
+    "thumbnail": "https://picsum.photos/seed/106/400/300"
+  },
+  {
+    "id": 107,
+    "title": "Phones Product 107",
+    "category": "Phones",
+    "price": 1143.59,
+    "rating": 4.8,
+    "thumbnail": "https://picsum.photos/seed/107/400/300"
+  },
+  {
+    "id": 108,
+    "title": "Wearables Product 108",
+    "category": "Wearables",
+    "price": 498.54,
+    "rating": 4.9,
+    "thumbnail": "https://picsum.photos/seed/108/400/300"
+  },
+  {
+    "id": 109,
+    "title": "Gaming Product 109",
+    "category": "Gaming",
+    "price": 775.56,
+    "rating": 4.2,
+    "thumbnail": "https://picsum.photos/seed/109/400/300"
+  },
+  {
+    "id": 110,
+    "title": "Wearables Product 110",
+    "category": "Wearables",
+    "price": 769.61,
+    "rating": 4.5,
+    "thumbnail": "https://picsum.photos/seed/110/400/300"
+  },
+  {
+    "id": 111,
+    "title": "Gaming Product 111",
+    "category": "Gaming",
+    "price": 1413.13,
+    "rating": 4.2,
+    "thumbnail": "https://picsum.photos/seed/111/400/300"
+  },
+  {
+    "id": 112,
+    "title": "Audio Product 112",
+    "category": "Audio",
+    "price": 1385.33,
+    "rating": 4.7,
+    "thumbnail": "https://picsum.photos/seed/112/400/300"
+  },
+  {
+    "id": 113,
+    "title": "Laptops Product 113",
+    "category": "Laptops",
+    "price": 1262.4,
+    "rating": 2.8,
+    "thumbnail": "https://picsum.photos/seed/113/400/300"
+  },
+  {
+    "id": 114,
+    "title": "Phones Product 114",
+    "category": "Phones",
+    "price": 597.66,
+    "rating": 3.3,
+    "thumbnail": "https://picsum.photos/seed/114/400/300"
+  },
+  {
+    "id": 115,
+    "title": "Home Product 115",
+    "category": "Home",
+    "price": 372.35,
+    "rating": 2.7,
+    "thumbnail": "https://picsum.photos/seed/115/400/300"
+  },
+  {
+    "id": 116,
+    "title": "Home Product 116",
+    "category": "Home",
+    "price": 464.63,
+    "rating": 2.8,
+    "thumbnail": "https://picsum.photos/seed/116/400/300"
+  },
+  {
+    "id": 117,
+    "title": "Cameras Product 117",
+    "category": "Cameras",
+    "price": 244.35,
+    "rating": 4.3,
+    "thumbnail": "https://picsum.photos/seed/117/400/300"
+  },
+  {
+    "id": 118,
+    "title": "Home Product 118",
+    "category": "Home",
+    "price": 558.78,
+    "rating": 3.1,
+    "thumbnail": "https://picsum.photos/seed/118/400/300"
+  },
+  {
+    "id": 119,
+    "title": "Laptops Product 119",
+    "category": "Laptops",
+    "price": 1451.8,
+    "rating": 3.0,
+    "thumbnail": "https://picsum.photos/seed/119/400/300"
+  },
+  {
+    "id": 120,
+    "title": "Phones Product 120",
+    "category": "Phones",
+    "price": 606.41,
+    "rating": 3.7,
+    "thumbnail": "https://picsum.photos/seed/120/400/300"
+  }
+]

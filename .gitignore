@@ -1,0 +1,32 @@
+# Root-level ignores
+node_modules/
+.env
+.DS_Store
+
+# Front-end (React + Vite)
+Front-end/node_modules/
+Front-end/dist/
+Front-end/.env
+Front-end/.DS_Store
+Front-end/.vite/
+
+# Optional: Vite cache
+Front-end/.vite-cache/
+
+# Back-end (Django)
+Back-end/__pycache__/
+Back-end/*.py[cod]
+Back-end/*.sqlite3
+Back-end/db.sqlite3
+Back-end/media/
+Back-end/staticfiles/
+Back-end/.env
+Back-end/.DS_Store
+
+# Django migrations
+Back-end/**/migrations/
+Back-end/**/migrations/*.py
+Back-end/**/migrations/*.pyc
+
+# VS Code settings (optional)
+.vscode/
