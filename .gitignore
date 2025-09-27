@@ -20,13 +20,10 @@ Back-end/*.sqlite3
 Back-end/db.sqlite3
 Back-end/media/
 Back-end/staticfiles/
-Back-end/.env
-Back-end/.DS_Store
+Back-end/.envo
+Back-end/.DS_Stre
 
-# Django migrations
-Back-end/**/migrations/
-Back-end/**/migrations/*.py
-Back-end/**/migrations/*.pyc
+
 
 # VS Code settings (optional)
 .vscode/
