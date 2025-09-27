@@ -68,3 +68,4 @@ if not DEBUG:
     CSRF_COOKIE_SECURE = True
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
