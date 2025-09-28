@@ -58,7 +58,6 @@ SPECTACULAR_SETTINGS = {"TITLE": "ProDev Catalog API",
                         "DESCRIPTION": "E-commerce API", "VERSION": "1.1.0"}
 
 
-CORS_ALLOW_CREDENTIALS = True
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
@@ -68,6 +67,7 @@ if not DEBUG:
     CSRF_COOKIE_SECURE = True
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
 
     "https://nexus-project-production-c1e8.up.railway.app",
@@ -77,5 +77,4 @@ CORS_ALLOWED_ORIGINS = [
     "https://motivated-spirit-production-5e5e.up.railway.app",  # frontend
     "http://localhost:5173",  # vite dev
 ]
-CORS_ALLOW_ALL_ORIGINS = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
