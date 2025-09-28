@@ -60,7 +60,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = True
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
@@ -68,13 +67,10 @@ if not DEBUG:
     SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-CORS_ORIGIN_WHITELIST = CORS_ALLOWED_ORIGINS
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 CSRF_TRUSTED_ORIGINS = [
-    "https://motivated-spirit-production-5e5e.up.railway.app"
-]
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-CSRF_TRUSTED_ORIGINS = [
+    "https://motivated-spirit-production-5e5e.up.railway.app",
     "https://nexus-project-production-c1e8.up.railway.app",
 ]
+CORS_ALLOW_ALL_ORIGINS = True

@@ -6,6 +6,7 @@ export const http = axios.create({
 })
 
 http.interceptors.request.use((config) => {
+  console.log("VITE_API_BASE =", import.meta.env.VITE_API_BASE)
   const raw = localStorage.getItem("auth.tokens")
   if (raw) {
     try {
