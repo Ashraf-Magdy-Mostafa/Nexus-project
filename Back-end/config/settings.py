@@ -27,6 +27,8 @@ MIDDLEWARE = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
+
+
 ]
 
 ROOT_URLCONF = "config.urls"
@@ -54,8 +56,11 @@ REST_FRAMEWORK = {
 SPECTACULAR_SETTINGS = {"TITLE": "ProDev Catalog API",
                         "DESCRIPTION": "E-commerce API", "VERSION": "1.1.0"}
 
-CORS_ALLOWED_ORIGINS = [o.strip() for o in os.getenv(
-    "CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",") if o.strip()]
+CORS_ALLOWED_ORIGINS = [
+    o.strip()
+    for o in os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",")
+    if o.strip()
+] + ["https://motivated-spirit-production-5e5e.up.railway.app"]
 CORS_ALLOW_CREDENTIALS = True
 
 STATIC_URL = "/static/"
