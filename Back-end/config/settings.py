@@ -19,15 +19,16 @@ INSTALLED_APPS = [
     "rest_framework", "drf_spectacular", "corsheaders", "shop"
 ]
 
-MIDDLEWARE = ["corsheaders.middleware.CorsMiddleware",
-              "django.middleware.security.SecurityMiddleware",
-              "whitenoise.middleware.WhiteNoiseMiddleware",
-              "django.middleware.common.CommonMiddleware",
-              "django.contrib.sessions.middleware.SessionMiddleware",
-              "django.middleware.csrf.CsrfViewMiddleware",
-              "django.contrib.auth.middleware.AuthenticationMiddleware",
-              "django.contrib.messages.middleware.MessageMiddleware",
-              ]
+MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+]
 
 ROOT_URLCONF = "config.urls"
 TEMPLATES = [{
@@ -47,6 +48,7 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
     "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
     "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticatedOrReadOnly",),
+
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 20,
 
@@ -55,10 +57,7 @@ REST_FRAMEWORK = {
 SPECTACULAR_SETTINGS = {"TITLE": "ProDev Catalog API",
                         "DESCRIPTION": "E-commerce API", "VERSION": "1.1.0"}
 
-CORS_ALLOWED_ORIGINS = [
-    "https://motivated-spirit-production-5e5e.up.railway.app",  # frontend
-    "http://localhost:5173",
-]
+
 CORS_ALLOW_CREDENTIALS = True
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
@@ -70,7 +69,13 @@ if not DEBUG:
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 CSRF_TRUSTED_ORIGINS = [
-    "https://motivated-spirit-production-5e5e.up.railway.app",
+
     "https://nexus-project-production-c1e8.up.railway.app",
+    "https://motivated-spirit-production-5e5e.up.railway.app",
+]
+CORS_ALLOWED_ORIGINS = [
+    "https://motivated-spirit-production-5e5e.up.railway.app",  # frontend
+    "http://localhost:5173",  # vite dev
 ]
 CORS_ALLOW_ALL_ORIGINS = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
