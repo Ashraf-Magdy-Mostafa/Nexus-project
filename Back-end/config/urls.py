@@ -6,6 +6,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from shop.views import RegisterView, health
 
 urlpatterns = [
+
     path("admin/", admin.site.urls),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path("api/schema/swagger/", SpectacularSwaggerView.as_view(url_name="schema")),

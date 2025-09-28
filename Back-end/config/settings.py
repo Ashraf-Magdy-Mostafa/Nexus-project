@@ -19,16 +19,15 @@ INSTALLED_APPS = [
     "rest_framework", "drf_spectacular", "corsheaders", "shop"
 ]
 
-MIDDLEWARE = [
-    "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
-    "django.middleware.common.CommonMiddleware",
-    "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
-    "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django.contrib.messages.middleware.MessageMiddleware",
-]
+MIDDLEWARE = ["corsheaders.middleware.CorsMiddleware",
+              "django.middleware.security.SecurityMiddleware",
+              "whitenoise.middleware.WhiteNoiseMiddleware",
+              "django.middleware.common.CommonMiddleware",
+              "django.contrib.sessions.middleware.SessionMiddleware",
+              "django.middleware.csrf.CsrfViewMiddleware",
+              "django.contrib.auth.middleware.AuthenticationMiddleware",
+              "django.contrib.messages.middleware.MessageMiddleware",
+              ]
 
 ROOT_URLCONF = "config.urls"
 TEMPLATES = [{
@@ -57,12 +56,11 @@ SPECTACULAR_SETTINGS = {"TITLE": "ProDev Catalog API",
                         "DESCRIPTION": "E-commerce API", "VERSION": "1.1.0"}
 
 CORS_ALLOWED_ORIGINS = [
-    o.strip()
-    for o in os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",")
-    if o.strip()
-] + ["https://motivated-spirit-production-5e5e.up.railway.app"]
+    "https://motivated-spirit-production-5e5e.up.railway.app",  # frontend
+    "http://localhost:5173",
+]
 CORS_ALLOW_CREDENTIALS = True
-
+CORS_ALLOW_ALL_ORIGINS = True
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
