@@ -16,7 +16,7 @@ export default function Grid() {
   const { items, total, page, limit, status, view, hasMore } = useAppSelector(
     (s) => s.products
   )
-
+  console.log(import.meta.env.VITE_API_URL)
   const totalPages = useMemo(
     () => Math.max(1, Math.ceil(total / limit)),
     [total, limit]
