@@ -3,18 +3,20 @@ import { logout } from '../store/authSlice'
 import { useAppDispatch, useAppSelector } from '../hooks'
 import { selectCount } from '../store/cartSlice'
 import { toggleCart } from '../store/uiSlice'
-
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 export default function Header() {
   const dispatch = useAppDispatch()
   const isLoggedIn = useAppSelector((s) => !!s.auth.access)
   const count = useAppSelector((s) => selectCount(s.cart))
+  const navigate = useNavigate();
 
   return (
     <header className="sticky top-0 z-10 border-b bg-white/90 backdrop-blur shadow-sm transition">
-      <div className="container flex items-center justify-between py-3">
-        <h1 className="text-xl font-bold tracking-tight text-gray-800">
+      <div className="container flex items-center justify-between py-3" >
+        <Link to="/" className="text-xl font-bold tracking-tight text-gray-800">
           ProDev<span className="text-blue-600">Catalog</span>
-        </h1>
+        </Link>
         <div className="flex items-center gap-4">
           {isLoggedIn ? (
             <button
