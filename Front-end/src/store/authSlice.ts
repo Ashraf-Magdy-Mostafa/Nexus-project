@@ -19,11 +19,25 @@ const initialState: AuthState = {
 
 export const login = createAsyncThunk(
   "auth/login",
-  async ({ username, password }: { username: string; password: string }) => {
-    const { data } = await http.post("/api/auth/login/", { username, password })
-    return { access: data.access, refresh: data.refresh, user: { username } }
+  async (
+    { username, password }: { username: string; password: string },
+    { rejectWithValue }
+  ) => {
+    try {
+      const { data } = await http.post("/api/auth/login/", { username, password })
+      return { access: data.access, refresh: data.refresh, user: { username } }
+    } catch (err: any) {
+      let message = "Login failed. Please check your credentials."
+      if (err.response?.data?.detail) {
+        message = err.response.data.detail
+      } else if (err.message) {
+        message = err.message
+      }
+      return rejectWithValue(message)
+    }
   }
 )
+
 
 export const register = createAsyncThunk(
   "auth/register",
@@ -54,9 +68,13 @@ const slice = createSlice({
   },
   extraReducers(builder) {
     builder
-      .addCase(login.pending, (s) => { s.status = "loading" })
+      .addCase(login.pending, (s) => {
+        s.status = "loading"
+        s.error = null
+      })
       .addCase(login.fulfilled, (s, a) => {
         s.status = "idle"
+        s.error = null
         s.access = a.payload.access
         s.refresh = a.payload.refresh
         s.user = a.payload.user
@@ -64,11 +82,24 @@ const slice = createSlice({
         localStorage.setItem("refresh", s.refresh || "")
         localStorage.setItem("username", s.user?.username || "")
       })
-      .addCase(login.rejected, (s) => { s.status = "error" })
-      .addCase(register.pending, (s) => { s.status = "loading" })
-      .addCase(register.fulfilled, (s) => { s.status = "idle" })
-      .addCase(register.rejected, (s) => { s.status = "error" })
-  },
+      .addCase(login.rejected, (s, a) => {
+        s.status = "error"
+        s.error = (a.payload as string) || "Login failed"
+      })
+      .addCase(register.pending, (s) => {
+        s.status = "loading"
+        s.error = null
+      })
+      .addCase(register.fulfilled, (s) => {
+        s.status = "idle"
+        s.error = null
+      })
+      .addCase(register.rejected, (s, a) => {
+        s.status = "error"
+        s.error = (a.payload as string) || "Registration failed"
+      })
+  }
+  ,
 })
 
 export const { logout, loadFromStorage } = slice.actions

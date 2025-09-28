@@ -1,10 +1,9 @@
-
-import data from '../mocks/products.json'
+import { http } from './http'
 
 export type Product = {
   id: number
   title: string
-  category: string
+  category: string | { id: number; name: string; slug: string }
   price: number
   rating: number
   thumbnail: string
@@ -19,35 +18,23 @@ export type Query = {
   limit?: number
 }
 
-const delay = (ms: number) => new Promise(res => setTimeout(res, ms))
+const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 export async function fetchProducts(q: Query): Promise<{ items: Product[], total: number }> {
-  await delay(400) // simulate network latency
-  const page = q.page ?? 1
-  const limit = q.limit ?? 20
-  let items = [...(data as Product[])]
+  const params = new URLSearchParams()
 
-  // search
-  if (q.search && q.search.trim()) {
-    const s = q.search.toLowerCase()
-    items = items.filter(p => p.title.toLowerCase().includes(s))
-  }
+  if (q.category && q.category !== 'All') params.append('category', q.category)
+  if (q.search) params.append('search', q.search)
+  if (q.sortBy) params.append('sortBy', q.sortBy)
+  if (q.sortDir) params.append('sortDir', q.sortDir)
+  if (q.page) params.append('page', String(q.page))
+  if (q.limit) params.append('limit', String(q.limit))
 
-  // category
-  if (q.category && q.category !== 'All') {
-    items = items.filter(p => p.category === q.category)
-  }
+  const response = await http.get(`/api/products/?${params.toString()}`)
+  await delay(400)
 
-  // sorting
-  if (q.sortBy) {
-    const dir = q.sortDir === 'desc' ? -1 : 1
-    items.sort((a, b) => (a[q.sortBy!] > b[q.sortBy!] ? 1 : -1) * dir)
-  }
+  const items: Product[] = response.data.results
+  const total: number = response.data.count ?? items.length
 
-  const total = items.length
-  const start = (page - 1) * limit
-  const end = start + limit
-  const pageItems = items.slice(start, end)
-
-  return { items: pageItems, total }
+  return { items, total }
 }

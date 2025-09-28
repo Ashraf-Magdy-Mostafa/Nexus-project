@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import { useAppDispatch, useAppSelector } from '../hooks'
 import { login } from '../store/authSlice'
@@ -21,23 +20,46 @@ export default function Login() {
   }
 
   return (
-    <div className="container mx-auto max-w-md py-10">
-      <h1 className="mb-6 text-2xl font-semibold">Login</h1>
-      <form onSubmit={onSubmit} className="space-y-4">
-        <div>
-          <label className="mb-1 block text-sm">Username</label>
-          <input className="w-full rounded border p-2" value={username} onChange={e => setUsername(e.target.value)} required />
-        </div>
-        <div>
-          <label className="mb-1 block text-sm">Password</label>
-          <input className="w-full rounded border p-2" type="password" value={password} onChange={e => setPassword(e.target.value)} required />
-        </div>
-        {status === 'error' && <p className="text-sm text-red-600">{String(error)}</p>}
-        <button disabled={status === 'loading'} className="rounded bg-black px-4 py-2 text-white">
-          {status === 'loading' ? 'Signing in...' : 'Login'}
-        </button>
-        <p className="text-sm">No account? <Link to="/register" className="text-blue-600 underline">Register</Link></p>
-      </form>
+    <div className="flex min-h-screen items-center justify-center bg-gray-50">
+      <div className="w-full max-w-md rounded-lg bg-white p-8 shadow">
+        <h1 className="mb-6 text-center text-2xl font-semibold">Login</h1>
+        <form onSubmit={onSubmit} className="space-y-4">
+          <div>
+            <label className="mb-1 block text-sm">Username</label>
+            <input
+              className="w-full rounded border p-2"
+              value={username}
+              onChange={e => setUsername(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <label className="mb-1 block text-sm">Password</label>
+            <input
+              className="w-full rounded border p-2"
+              type="password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          {status === 'error' && (
+            <p className="text-sm text-red-600">{String(error)}</p>
+          )}
+          <button
+            disabled={status === 'loading'}
+            className="w-full rounded bg-black px-4 py-2 text-white"
+          >
+            {status === 'loading' ? 'Signing in...' : 'Login'}
+          </button>
+          <p className="text-center text-sm">
+            No account?{' '}
+            <Link to="/register" className="text-blue-600 underline">
+              Register
+            </Link>
+          </p>
+        </form>
+      </div>
     </div>
   )
 }

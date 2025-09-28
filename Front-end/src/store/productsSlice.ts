@@ -78,7 +78,7 @@ const slice = createSlice({
       state.search = action.payload
       state.page = 1
     },
-    setSort(state, action: PayloadAction<{ sortBy?: 'price'|'rating', sortDir?: 'asc'|'desc' }>) {
+    setSort(state, action: PayloadAction<{ sortBy?: 'price' | 'rating', sortDir?: 'asc' | 'desc' }>) {
       state.sortBy = action.payload.sortBy
       state.sortDir = action.payload.sortDir
       state.page = 1
